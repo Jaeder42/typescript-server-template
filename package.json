@@ -4,13 +4,16 @@
   "description": "",
   "scripts": {
     "start": "node dist/index.js",
-    "lint": "tslint -c tslint.json 'src/**/*.ts' --fix"
+    "lint": "tslint -c tslint.json 'src/**/*.ts' --fix",
+    "dev": "nodemon --exec 'ts-node -r dotenv/config' src/index.ts",
+    "build": "tsc"
   },
   "author": "Your name here",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
     "@types/node": "^9.4.6",
+    "dotenv": "^5.0.1",
     "jaeder-tslint": "^1.1.2",
     "nodemon": "^1.17.1",
     "ts-node": "^5.0.0",
