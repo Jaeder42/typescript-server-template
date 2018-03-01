@@ -1,0 +1,3 @@
+{
+  "extends": "jaeder-tslint/tslint-config.json"
+}
